@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Navbar } from "../components/Navbar";
 
 export default function Home({ nasaData }: any) {
-  const classes = useStyles();
+  const classes = UseStyles();
   return (
     // <div className={styles.container}>
     <>
@@ -14,7 +14,7 @@ export default function Home({ nasaData }: any) {
   );
 }
 
-const useStyles = makeStyles((theme) => {
+const UseStyles = makeStyles((theme) => {
   return {
     root: {
       background: "#000",

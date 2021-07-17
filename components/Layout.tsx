@@ -4,7 +4,7 @@ import { Navbar } from "./Navbar";
 import { makeStyles } from "@material-ui/core/styles";
 
 const Layout = ({ children }: any) => {
-  const classes = useStyles();
+  const classes = UseStyles();
   return (
     <div className={classes.root}>
       <Head>
@@ -20,7 +20,7 @@ const Layout = ({ children }: any) => {
   );
 };
 
-const useStyles = makeStyles((theme) => {
+const UseStyles = makeStyles((theme) => {
   return {
     root: {
       background: "#000",

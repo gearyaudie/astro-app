@@ -3,7 +3,7 @@ import Image from "next/image";
 import { makeStyles } from "@material-ui/core";
 
 const daily_pic = ({ data }: any) => {
-  const classes = useStyles();
+  const classes = UseStyles();
 
   return (
     <div className={classes.root}>
@@ -20,7 +20,7 @@ const daily_pic = ({ data }: any) => {
   );
 };
 
-const useStyles = makeStyles((theme) => {
+const UseStyles = makeStyles((theme) => {
   return {
     root: {
       display: "flex",

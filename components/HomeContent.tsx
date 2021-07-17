@@ -5,7 +5,7 @@ import { Container, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const HomeContent: React.FC<any> = ({ data }) => {
-  const classes = useStyles();
+  const classes = UseStyles();
   const router = useRouter();
 
   return (
@@ -38,6 +38,7 @@ const HomeContent: React.FC<any> = ({ data }) => {
       <div className={classes.mainImgContainer}>
         <Image
           src="/assets/main-img-2.jpg"
+          alt="main-image"
           width={350}
           height={500}
           className={classes.mainImg}
@@ -50,7 +51,7 @@ const HomeContent: React.FC<any> = ({ data }) => {
   );
 };
 
-const useStyles = makeStyles((theme) => {
+const UseStyles = makeStyles((theme) => {
   return {
     root: {
       display: "flex",

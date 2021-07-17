@@ -12,7 +12,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 export const Navbar = () => {
-  const classes = useStyles();
+  const classes = UseStyles();
   return (
     <div className={classes.root}>
       <AppBar className={classes.appBar} position="relative">
@@ -21,7 +21,9 @@ export const Navbar = () => {
             <img src="./assets/logo.png" className={classes.logoImg} alt="" />
           </Link>
           <Typography className={classes.mainTxt}>
-            <Link href="/">astro</Link>
+            <Link href="/" passHref>
+              astro
+            </Link>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -36,7 +38,7 @@ export const Navbar = () => {
 
 const drawerWidth = 25;
 
-const useStyles = makeStyles((theme) => {
+const UseStyles = makeStyles((theme) => {
   return {
     root: {
       position: "relative",
